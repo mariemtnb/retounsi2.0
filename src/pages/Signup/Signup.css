@@ -1,0 +1,92 @@
+.signup-container {
+    height: 100vh;
+    width: 100vw;
+    background: url('../../assets/backgroundUI.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-form {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.032);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .signup-title {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 550;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .signup-form input,
+  .signup-form select {
+    width: 92%;
+    padding: 15px;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.284);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+  }
+  
+  .signup-form input::placeholder {
+    color: #ffffff;
+  }
+  
+  .signup-form select {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.284);
+  }
+  
+  .signup-form select option {
+    background-color: #333;
+    color: white;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .login-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    color: white;
+  }
+  
+  .login-link a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  

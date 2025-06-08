@@ -1,0 +1,95 @@
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    background: url('../../assets/backgroundUI.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.032);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .login-title {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 550px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 92%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.284);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: #ffffff;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .reset-password {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  
+  .reset-password a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .signup-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    color: white;
+  }
+  
+  .signup-link a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
