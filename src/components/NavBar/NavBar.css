@@ -1,0 +1,99 @@
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 37px;
+  background-color: rgba(0, 0, 0, 0.0);
+  
+}
+
+.navbar-left {
+  flex: 0;
+  /* Ensure the left section only takes as much space as needed */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 39px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  padding-left: 34px;
+}
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-right li {
+  list-style: none;
+}
+
+/* General navbar buttons, excluding the sign-in button */
+.navbar button:not(.signin-button) {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar button:not(.signin-button):hover {
+  opacity: 0.5;
+}
+
+/* Specific styling for the sign-in button */
+.signin-button {
+  background-color: white;
+  color: #000;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 550;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.signin-button:hover {
+  background-color: rgba(0, 0, 0, 0.559);
+  color: #ffffff;
+}
+
+.navbar button:focus {
+  outline: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 37px; /* space between group and Sign In */
+}
+
+.nav-buttons-group {
+  display: flex;
+  gap: 5px; /* smaller gap between grouped buttons */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-buttons-group li {
+  list-style: none;
+}

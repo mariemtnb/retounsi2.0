@@ -1,0 +1,148 @@
+.Category-container {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('../../assets/backgroundUI.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 110px 20px;
+  box-sizing: border-box;
+}
+
+
+.Category-form {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 1350px;
+  max-height: 75vh; /* make this relative to screen height */
+  overflow-y: auto;  /* enable scroll inside */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Category-title {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.filter-section input,
+.filter-section select {
+  flex: 1 1 200px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.filter-section input::placeholder {
+  color: #fff;
+}
+
+.search-btn {
+  flex: 1 1 100%;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.no-result {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.announcements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.announcement-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 16px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.announcement-card button {
+  margin-top: auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.announcement-card button:hover {
+  background-color: #ccc;
+}
+
+.Category-form::-webkit-scrollbar {
+  width: 8px;
+}
+
+.Category-form::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.Category-form::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.filter-section select option {
+  color: black;
+  background: white; /* Optional: make dropdown background white */
+}
+
+
+.filter-section select {
+  flex: 1 1 200px;
+  padding: 12px;
+  font-size: 16px;
+  height: 43px; /* Optional: force same height */
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  
+}
+
